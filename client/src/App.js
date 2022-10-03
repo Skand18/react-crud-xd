@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Add from "./pages/Add";
 import Books from "./pages/Books";
 import Update from "./pages/Update";
+import "./styles.css";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Books />}></Route>
           <Route path="/add" element={<Add />}></Route>
-          <Route path="/update" element={<Update />}></Route>
+          <Route path="/update/:id" element={<Update />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
